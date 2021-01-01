@@ -1,0 +1,20 @@
+//C# Console Uygumasında kullanıcıdan yaş bilgisi istenerek eğer yaşı 18 ve daha büyükse “Ehliyet Alabilirsiniz” yazan,değilse Ehliyet alamazsınız diyerek Ehliyet alabilmesi için kaç yılı kaldığını ekranda gösteren örnek:
+
+
+static void Main(string[] args)
+        {
+            int yas, fark;
+            Console.Write("Yaşınızı giriniz : ");
+            yas = Convert.ToInt32(Console.ReadLine());
+            
+            if (yas>=18)
+            {
+                Console.WriteLine("Ehliyet alabilirsiniz.");
+            }
+            else
+            {
+                fark = 18 - yas;
+                Console.WriteLine("Ehliyet alamazsınız.{0} yıl beklemeniz gerekiyor.",fark);
+            }
+            Console.ReadKey();
+        }
